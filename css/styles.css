@@ -216,6 +216,9 @@ button:active .button:active {
   }
 
   @media all and (max-width: 500px) {
+    body {
+      padding: 5px;
+    }
     .grid {
       grid-template-columns: 1fr;
     }
