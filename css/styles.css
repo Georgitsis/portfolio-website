@@ -238,6 +238,12 @@ button:active .button:active {
       height: 100%;
     }
   }
+
+  @media all and (max-width: 369px) {
+    .hello__world {
+      font-size: 5.5vw;
+    }
+  }
 }
 
 @keyframes color-change {  /* Animation for svg */

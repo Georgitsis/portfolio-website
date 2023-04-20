@@ -269,8 +269,14 @@ button:active .button:active {
 
   @media all and (max-width: 384px) {
     .logo__picture {
-      width: 45vw;
+      width: 30vw;
       height: 100%;
+    }
+  }
+
+  @media all and (max-width: 369px) {
+    .hello__world {
+      font-size: 5.5vw;
     }
   }
 }
