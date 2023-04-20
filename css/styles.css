@@ -163,6 +163,7 @@ button:active .button:active {
 
 .navigation-list {
   list-style-type: none;
+  vertical-align: middle;
 }
 
 .navigation-list li {
@@ -194,31 +195,47 @@ button:active .button:active {
   .grid__item:last-child {
     grid-area: 1 / 4 / 3 / 4;
   }
-}
 
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
+  @media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+
+    .grid__item:last-child {
+      grid-area: auto / auto / auto / auto;
+    }
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .navigation-list li {
+      margin-left: 1vw;
+    }
   }
 
-  .grid__item:last-child {
-    grid-area: auto / auto / auto / auto;
+  @media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
-  h1 {
-    font-size: 22px;
+  @media all and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
   }
-}
 
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
+  @media all and (max-width: 550px) {
+    .navigation-list li {
+      display: block;
+    }
   }
-}
 
-@media all and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
+  @media all and (max-width: 384px) {
+    .navigation-list li {
+      display: block;
+    }
   }
 }
 

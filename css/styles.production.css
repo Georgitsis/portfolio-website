@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 4 version
+* Browsers: last 2 version
 */
 
 * {
@@ -84,7 +84,6 @@ ul {
 a {
   color: inherit;
   -webkit-transition: color 0.2s;
-  -o-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -107,7 +106,6 @@ button {
   border-radius: 5px;
   border-width: 1px;
   -webkit-transition: background-color 0.2s;
-  -o-transition: background-color 0.2s;
   transition: background-color 0.2s;
   display: inline-block;
 }
@@ -119,7 +117,6 @@ button {
   border-radius: 5px;
   border-width: 1px;
   -webkit-transition: background-color 0.2s;
-  -o-transition: background-color 0.2s;
   transition: background-color 0.2s;
   display: inline-block;
 }
@@ -193,13 +190,13 @@ button:active .button:active {
 
 .navigation-list {
   list-style-type: none;
+  vertical-align: middle;
 }
 
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
   -webkit-transition: font-size 0.2s;
-  -o-transition: font-size 0.2s;
   transition: font-size 0.2s;
 }
 
@@ -231,33 +228,43 @@ button:active .button:active {
     -ms-grid-column: 4;
     grid-area: 1 / 4 / 3 / 4;
   }
-}
 
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
+  @media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+
+    .grid__item:last-child {
+      grid-area: auto / auto / auto / auto;
+    }
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .navigation-list li {
+      margin-left: 1vw;
+    }
   }
 
-  .grid__item:last-child {
-    grid-area: auto / auto / auto / auto;
+  @media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+      -ms-grid-columns: 1fr 10px 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
-  h1 {
-    font-size: 22px;
+  @media all and (max-width: 500px) {
+    .grid {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+    }
   }
-}
 
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    -ms-grid-columns: 1fr 10px 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 500px) {
-  .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+  @media all and (max-width: 550px) {
+    .navigation-list li {
+      display: block;
+    }
   }
 }
 
