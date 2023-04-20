@@ -20,7 +20,7 @@ body {
   color: var(--primary-font-color); /* font color */
   font-size: var(--font-size-normal);
   font-weight: 600;
-  padding: 5vw;
+  padding: 100px;
   padding-top: 25px;
 }
 
@@ -211,12 +211,20 @@ button:active .button:active {
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
+  body {
+    padding: 10px;
+  }
+
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media all and (max-width: 500px) {
+  body {
+    padding: 5px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
