@@ -101,6 +101,7 @@ button,
 .button {
   font-family: inherit;
   background-color: var(--button-color);
+  margin-top: 5px;
   padding: 5px;
   border-radius: 5px;
   border-width: 1px;
