@@ -233,8 +233,9 @@ button:active .button:active {
   }
 
   @media all and (max-width: 384px) {
-    .navigation-list li {
-      display: block;
+    .logo__picture {
+      width: 30vw;
+      height: 100%;
     }
   }
 }

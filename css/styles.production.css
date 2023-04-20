@@ -266,6 +266,13 @@ button:active .button:active {
       display: block;
     }
   }
+
+  @media all and (max-width: 384px) {
+    .logo__picture {
+      width: 45vw;
+      height: 100%;
+    }
+  }
 }
 
 @-webkit-keyframes color-change {  /* Animation for svg */
