@@ -1,3 +1,0 @@
-HTMLHint and styleint
-
-No pluggin settings were changed
