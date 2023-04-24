@@ -11,7 +11,7 @@
 }
 
 * {
-  box-sizing: border-box;/* When setting elemt width, this makes sure it takes the padding and borders in consideration */
+  box-sizing: border-box;/* When setting element width, this makes sure it takes the padding and borders in consideration */
 }
 
 body {
@@ -25,6 +25,10 @@ body {
 }
 
 .page-footer {
+  position: fixed;
+  right:5%;
+  left: 5%;
+  bottom: 10px;
   clear: both;
   display: flex;
   flex-direction: column;
@@ -132,10 +136,6 @@ button:active .button:active {
   margin-right: 40px;
   border-radius: 50%;
   width: 150px;
-}
-
-.page-footer {
-  clear: both;
 }
 
 .logo__picture {
