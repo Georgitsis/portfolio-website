@@ -3,7 +3,7 @@
   --primary-font-color: #032436;
   --link-color-visited: #552600;
   --link-color-hover: #aa6b39;
-  --link-color-4active: blueviolet;
+  --link-color-active: blueviolet;
   --button-color: #d3cfcf;
   --button-color-hover: #e6e6e6;
   --button-color-active: #6d6a6a;
@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: var(--primary-background-color);
+  background-color: #3aafa9;
   font-family: "Montserrat", sans-serif;
   color: var(--primary-font-color);
   /* font color */
