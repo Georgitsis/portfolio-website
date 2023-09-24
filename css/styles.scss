@@ -25,7 +25,7 @@ $secondary-bright-color: #feffff;
 body {
    background-color: $primary-background-color;
    font-family: 'Montserrat', sans-serif;
-   color: var(--primary-font-color);
+   color: $primary-dark-color;
 
    /* font color */
    font-size: var(--font-size-normal);
@@ -45,35 +45,7 @@ body {
    text-align: center;
 }
 
-h1 {
-   font-size: 40px;
-   line-height: normal;
-}
 
-h2 {
-   font-size: 35px;
-   line-height: normal;
-}
-
-h3 {
-   font-size: 30px;
-   line-height: normal;
-}
-
-h4 {
-   font-size: 25px;
-   line-height: normal;
-}
-
-h5 {
-   font-size: 20px;
-   line-height: normal;
-}
-
-h6 {
-   font-size: 15px;
-   line-height: normal;
-}
 
 p {
    font-size: var(--font-size-normal);
@@ -317,4 +289,34 @@ button:active .button:active {
    animation-iteration-count: infinite;
    animation-direction: alternate;
    animation-timing-function: linear;
+}
+
+h1 {
+   font-size: 40px;
+   line-height: normal;
+}
+
+h2 {
+   font-size: 35px;
+   line-height: normal;
+}
+
+h3 {
+   font-size: 30px;
+   line-height: normal;
+}
+
+h4 {
+   font-size: 25px;
+   line-height: normal;
+}
+
+h5 {
+   font-size: 20px;
+   line-height: normal;
+}
+
+h6 {
+   font-size: 15px;
+   line-height: normal;
 }

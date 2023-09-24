@@ -18,7 +18,7 @@
 body {
   background-color: #3aafa9;
   font-family: "Montserrat", sans-serif;
-  color: var(--primary-font-color);
+  color: #17252a;
   /* font color */
   font-size: var(--font-size-normal);
   font-weight: 600;
@@ -35,36 +35,6 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-}
-
-h1 {
-  font-size: 40px;
-  line-height: normal;
-}
-
-h2 {
-  font-size: 35px;
-  line-height: normal;
-}
-
-h3 {
-  font-size: 30px;
-  line-height: normal;
-}
-
-h4 {
-  font-size: 25px;
-  line-height: normal;
-}
-
-h5 {
-  font-size: 20px;
-  line-height: normal;
-}
-
-h6 {
-  font-size: 15px;
-  line-height: normal;
 }
 
 p {
@@ -286,4 +256,34 @@ button:active .button:active {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: normal;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: normal;
+}
+
+h4 {
+  font-size: 25px;
+  line-height: normal;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: normal;
+}
+
+h6 {
+  font-size: 15px;
+  line-height: normal;
 }/*# sourceMappingURL=styles.css.map */
