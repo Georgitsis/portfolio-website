@@ -39,7 +39,7 @@ $link-color-active: blueviolet;
 
 body {
    background-color: $primary-background-color;
-   font-family: 'Montserrat', sans-serif;
+   font-family: 'Comfortaa', sans-serif;
    color: $primary-dark-color;
 
    /* font color */
@@ -55,6 +55,11 @@ body {
 
       .page-logo {
          vertical-align: middle;
+
+         span {
+            font-family: 'Permanent Marker', sans-serif;
+            font-size: xx-large;
+         }
       }
 
       .navigation-list {
@@ -85,6 +90,18 @@ body {
       }
    }
 
+   .profile {
+      max-width: 50vw;
+      /* Sets the max width of the profile */
+      margin: 5vw auto;
+      text-align: justify;
+
+      span {
+         font-family: 'Permanent Marker', sans-serif;
+         font-size: x-large;
+      }
+   }
+
    .page-footer {
       position: fixed;
       right: 5%;
@@ -94,6 +111,10 @@ body {
       display: flex;
       flex-direction: column;
       text-align: center;
+
+      .footer-image {
+         min-width: 30px;
+      }
    }
 }
 
@@ -131,23 +152,8 @@ button:active .button:active {
    float: left;
    margin-right: 40px;
    border-radius: 50%;
-   width: 150px;
+   width: 250px;
 }
-
-.logo__picture {
-   width: 200px;
-}
-
-.profile {
-   max-width: 700px;
-
-   /* Sets the max width of the profile */
-   margin: 0 auto;
-
-   /* Centers the content horizontally with 0 margin on top */
-}
-
-
 
 .page-header__item {
    flex: 0 1 200px;
