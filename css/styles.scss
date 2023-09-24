@@ -45,10 +45,18 @@ body {
    /* font color */
    font-size: var(--font-size-normal);
    font-weight: 600;
-   padding: 5vw;
-   padding-top: 25px;
 
    .page-header {
+      background-color: $primary-dark-color;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
+
+      .page-logo {
+         vertical-align: middle;
+      }
+
       .navigation-list {
          list-style-type: none;
          vertical-align: middle;
@@ -60,19 +68,19 @@ body {
       }
 
       a {
-         color: $secondary-bright-color;
+         color: $primary-bright-color;
          text-decoration: none;
 
          &:visited {
-            color: $secondary-bright-color;
+            color: $primary-bright-color;
          }
 
          &:hover {
-            color: $primary-bright-color;
+            color: $secondary-bright-color;
          }
 
          &:active {
-            color: $primary-bright-color;
+            color: $secondary-bright-color;
          }
       }
    }
@@ -139,11 +147,7 @@ button:active .button:active {
    /* Centers the content horizontally with 0 margin on top */
 }
 
-.page-header {
-   display: flex;
-   width: 100%;
-   padding: 20px;
-}
+
 
 .page-header__item {
    flex: 0 1 200px;
