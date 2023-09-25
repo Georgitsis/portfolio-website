@@ -41,10 +41,14 @@ body {
    background-color: $primary-background-color;
    font-family: 'Comfortaa', sans-serif;
    color: $primary-dark-color;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   margin: 0;
 
    /* font color */
-   font-size: var(--font-size-normal);
-   font-weight: 600;
+   //font-size: var(--font-size-normal);
+   //font-weight: 600;
 
    .page-header {
       background-color: $primary-dark-color;
@@ -107,14 +111,15 @@ body {
    }
 
    .page-footer {
-      position: fixed;
-      right: 5%;
-      left: 5%;
-      bottom: 10px;
+      //position: fixed;
+      //right: 5%;
+      //left: 5%;
+      //bottom: 10px;
       clear: both;
       display: flex;
       flex-direction: column;
       text-align: center;
+      margin-top: auto;
 
       .footer-image {
          min-width: 30px;
@@ -169,16 +174,11 @@ button:active .button:active {
    text-align: right;
 }
 
-#meet-app-img {
-   max-width: 40vw;
-   border-radius: 5px;
-}
-
 @supports (display: grid) {
    .grid {
       display: grid;
       grid-gap: 20px;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
    }
 
    .grid__item {
@@ -187,6 +187,12 @@ button:active .button:active {
       border-radius: 5px;
       border: 1px solid #032436;
       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+      .project-img {
+         //max-width: 25vw;
+         width: 100%;
+         border-radius: 5px;
+      }
    }
 
    @media all and (max-width: 750px) {
@@ -222,18 +228,7 @@ button:active .button:active {
       }
    }
 
-   @media all and (max-width: 384px) {
-      .logo__picture {
-         width: 30vw;
-         height: 100%;
-      }
-   }
 
-   @media all and (max-width: 369px) {
-      .hello__world {
-         font-size: 5.5vw;
-      }
-   }
 }
 
 /*
