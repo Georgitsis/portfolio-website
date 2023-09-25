@@ -72,7 +72,6 @@ body .projects {
 }
 body .profile {
   max-width: 50vw;
-  /* Sets the max width of the profile */
   margin: 5vw auto;
   text-align: justify;
 }
@@ -147,17 +146,28 @@ button:active .button:active {
   .grid__item {
     display: flex;
     flex-direction: column;
-    background-color: #8aaabb;
+    background-color: #def2f1;
     padding: 20px;
     border-radius: 5px;
-    border: 1px solid #032436;
+    border: 1px solid #17252a;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
-  .grid__item .project-img {
+  .grid__item .project-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid__item .project-content .project-img {
     width: 100%;
     border-radius: 5px;
+    border: 1px solid #17252a;
   }
-  .grid__item .project-description {
+  .grid__item .project-content .project-mobile-img {
+    border-radius: 5px;
+    border: 1px solid #17252a;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .grid__item .project-content .project-description {
     text-align: justify;
   }
   .grid__item .project-links {

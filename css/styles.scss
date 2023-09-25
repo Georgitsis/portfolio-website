@@ -100,7 +100,6 @@ body {
 
    .profile {
       max-width: 50vw;
-      /* Sets the max width of the profile */
       margin: 5vw auto;
       text-align: justify;
 
@@ -184,21 +183,35 @@ button:active .button:active {
    .grid__item {
       display: flex;
       flex-direction: column;
-      background-color: #8aaabb;
+      background-color: $primary-bright-color;
       padding: 20px;
       border-radius: 5px;
-      border: 1px solid #032436;
+      border: 1px solid $primary-dark-color;
       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 
-      .project-img {
-         //max-width: 25vw;
-         width: 100%;
-         border-radius: 5px;
+      .project-content {
+         display: flex;
+         flex-direction: column;
+
+         .project-img {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid $primary-dark-color;
+         }
+
+         .project-mobile-img {
+            border-radius: 5px;
+            border: 1px solid $primary-dark-color;
+            //vertical-align: middle;
+            margin-left: auto;
+            margin-right: auto;
+         }
+
+         .project-description {
+            text-align: justify;
+         }
       }
 
-      .project-description {
-         text-align: justify;
-      }
 
       .project-links {
          margin-top: auto;
