@@ -9,14 +9,6 @@ $link-color-hover: #aa6b39;
 $link-color-active: blueviolet;
 
 :root {
-   /* --primary-background-color: #6f90a2;
-   --primary-font-color: #032436;
-
-   --button-color: #d3cfcf;
-   --button-color-hover: #e6e6e6;
-   --button-color-active: #6d6a6a;
-   --font-size-normal: 12px; */
-
    a {
       &:visited {
          color: $link-color-visited;
@@ -46,10 +38,6 @@ body {
    flex-direction: column;
    min-height: 100vh;
    margin: 0;
-
-   /* font color */
-   //font-size: var(--font-size-normal);
-   //font-weight: 600;
 
    .page-header {
       background-color: $primary-dark-color;
@@ -125,6 +113,29 @@ body {
 
 .contact-content {
    margin: 5vw;
+
+   .cv-button {
+      text-decoration: none;
+      border: 1px solid $primary-dark-color;
+      border-radius: 4px;
+      background-color: #d4e2e7;
+      padding: 5px;
+      text-align: center;
+      margin-top: 100px;
+      color: $primary-dark-color;
+
+      &:visited {
+         color: $primary-bright-color;
+      }
+
+      &:hover {
+         color: $secondary-bright-color;
+      }
+
+      &:active {
+         color: $secondary-bright-color;
+      }
+   }
 }
 
 button,
@@ -273,5 +284,12 @@ button:active .button:active {
       .navigation-list li {
          display: block;
       }
+   }
+
+   .contact-grid {
+      display: grid;
+      max-width: 40%;
+      grid-gap: 5%;
+      grid-template-columns: 1fr 5fr;
    }
 }

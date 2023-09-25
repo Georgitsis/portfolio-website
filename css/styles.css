@@ -1,12 +1,3 @@
-:root {
-  /* --primary-background-color: #6f90a2;
-  --primary-font-color: #032436;
-
-  --button-color: #d3cfcf;
-  --button-color-hover: #e6e6e6;
-  --button-color-active: #6d6a6a;
-  --font-size-normal: 12px; */
-}
 :root a:visited {
   color: #552600;
 }
@@ -30,7 +21,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  /* font color */
 }
 body .page-header {
   background-color: #17252a;
@@ -92,6 +82,25 @@ body .page-footer .footer-image {
 
 .contact-content {
   margin: 5vw;
+}
+.contact-content .cv-button {
+  text-decoration: none;
+  border: 1px solid #17252a;
+  border-radius: 4px;
+  background-color: #d4e2e7;
+  padding: 5px;
+  text-align: center;
+  margin-top: 100px;
+  color: #17252a;
+}
+.contact-content .cv-button:visited {
+  color: #def2f1;
+}
+.contact-content .cv-button:hover {
+  color: #feffff;
+}
+.contact-content .cv-button:active {
+  color: #feffff;
 }
 
 button,
@@ -223,5 +232,11 @@ button:active .button:active {
     .navigation-list li {
       display: block;
     }
+  }
+  .contact-grid {
+    display: grid;
+    max-width: 40%;
+    grid-gap: 5%;
+    grid-template-columns: 1fr 5fr;
   }
 }/*# sourceMappingURL=styles.css.map */
