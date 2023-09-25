@@ -1,6 +1,7 @@
 $primary-background-color: #3aafa9;
 $primary-dark-color: #17252a;
 $secondary-dark-color: #2b7a78;
+$tertiary-dark-color: #324e58;
 $primary-bright-color: #def2f1;
 $secondary-bright-color: #feffff;
 $link-color-visited: #552600;
@@ -110,10 +111,6 @@ body {
    }
 
    .page-footer {
-      //position: fixed;
-      //right: 5%;
-      //left: 5%;
-      //bottom: 10px;
       clear: both;
       display: flex;
       flex-direction: column;
@@ -124,6 +121,10 @@ body {
          min-width: 30px;
       }
    }
+}
+
+.contact-content {
+   margin: 5vw;
 }
 
 button,
@@ -212,16 +213,39 @@ button:active .button:active {
          }
       }
 
-
       .project-links {
          margin-top: auto;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+
+         a {
+            text-decoration: none;
+            border: 1px solid $primary-dark-color;
+            border-radius: 4px;
+            background-color: $tertiary-dark-color;
+            width: 40%;
+            padding: 5px;
+            text-align: center;
+
+            &:visited {
+               color: $primary-bright-color;
+            }
+
+            &:hover {
+               color: $secondary-bright-color;
+            }
+
+            &:active {
+               color: $secondary-bright-color;
+            }
+         }
       }
    }
 
    @media all and (max-width: 750px) {
       .grid {
          grid-gap: 10px;
-
       }
 
       h1 {
@@ -250,63 +274,4 @@ button:active .button:active {
          display: block;
       }
    }
-
-
 }
-
-/*
-h1 {
-   font-size: 40px;
-   line-height: normal;
-}
-
-h2 {
-   font-size: 35px;
-   line-height: normal;
-}
-
-h3 {
-   font-size: 30px;
-   line-height: normal;
-}
-
-h4 {
-   font-size: 25px;
-   line-height: normal;
-}
-
-h5 {
-   font-size: 20px;
-   line-height: normal;
-}
-
-h6 {
-   font-size: 15px;
-   line-height: normal;
-} 
-
-p {
-   font-size: var(--font-size-normal);
-   line-height: normal;
-}
-
-span {
-   font-size: var(--font-size-normal);
-   line-height: normal;
-}
-
-div {
-   font-size: var(--font-size-normal);
-   line-height: normal;
-}
-
-ul {
-   font-size: var(--font-size-normal);
-}
-
-a {
-   color: inherit;
-   transition: color 0.2s;
-}
-
-*/

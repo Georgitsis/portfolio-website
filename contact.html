@@ -38,27 +38,29 @@
 		</nav>
 	</header>
 	<main>
-		<h1>Contact</h1>
-		<p>
-		<div>Telephone:
-			<a href="tel:+4793830521" role="link">+47 93830521</a>
+		<div class="contact-content">
+			<h1>Contact</h1>
+			<p>
+			<div>Telephone:
+				<a href="tel:+4793830521" role="link">+47 93830521</a>
+			</div>
+			<div>E-Mail: <a href="mailto:georgitsis.theodoros@gmail.com">georgitsis.theodoros@gmail.com</a></div>
+			<button type="button" onclick="window.open('mailto:georgitsis.theodoros@gmail.com');">Contact
+				me!</button><br><br>
+			</p>
+			<form action="" method="post">
+				<label for="email">Email: </label><br>
+				<input type="email" id="email" required><br>
+
+				<label for="tel">Telephone: </label><br>
+				<input type="tel" id="tel"><br>
+
+				<label for="message">Message: </label><br>
+				<textarea required maxlength="240" id="message"></textarea><br>
+
+				<input type="submit" value="Send message">
+			</form>
 		</div>
-		<div>E-Mail: <a href="mailto:georgitsis.theodoros@gmail.com">georgitsis.theodoros@gmail.com</a></div>
-		<button type="button" onclick="window.open('mailto:georgitsis.theodoros@gmail.com');">Contact me!</button><br><br>
-		</p>
-		<form action="" method="post">
-			<label for="email">Email: </label><br>
-			<input type="email" id="email" required><br>
-
-			<label for="tel">Telephone: </label><br>
-			<input type="tel" id="tel"><br>
-
-			<label for="message">Message: </label><br>
-			<textarea required maxlength="240" id="message"></textarea><br>
-
-			<input type="submit" value="Send message">
-		</form>
-
 	</main>
 	<footer class="page-footer">
 		<p>Find me on</p>

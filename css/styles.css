@@ -90,6 +90,10 @@ body .page-footer .footer-image {
   min-width: 30px;
 }
 
+.contact-content {
+  margin: 5vw;
+}
+
 button,
 .button {
   font-family: inherit;
@@ -172,6 +176,27 @@ button:active .button:active {
   }
   .grid__item .project-links {
     margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .grid__item .project-links a {
+    text-decoration: none;
+    border: 1px solid #17252a;
+    border-radius: 4px;
+    background-color: #324e58;
+    width: 40%;
+    padding: 5px;
+    text-align: center;
+  }
+  .grid__item .project-links a:visited {
+    color: #def2f1;
+  }
+  .grid__item .project-links a:hover {
+    color: #feffff;
+  }
+  .grid__item .project-links a:active {
+    color: #feffff;
   }
   @media all and (max-width: 750px) {
     .grid {
@@ -199,60 +224,4 @@ button:active .button:active {
       display: block;
     }
   }
-}
-/*
-h1 {
-   font-size: 40px;
-   line-height: normal;
-}
-
-h2 {
-   font-size: 35px;
-   line-height: normal;
-}
-
-h3 {
-   font-size: 30px;
-   line-height: normal;
-}
-
-h4 {
-   font-size: 25px;
-   line-height: normal;
-}
-
-h5 {
-   font-size: 20px;
-   line-height: normal;
-}
-
-h6 {
-   font-size: 15px;
-   line-height: normal;
-} 
-
-p {
-   font-size: var(--font-size-normal);
-   line-height: normal;
-}
-
-span {
-   font-size: var(--font-size-normal);
-   line-height: normal;
-}
-
-div {
-   font-size: var(--font-size-normal);
-   line-height: normal;
-}
-
-ul {
-   font-size: var(--font-size-normal);
-}
-
-a {
-   color: inherit;
-   transition: color 0.2s;
-}
-
-*//*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
