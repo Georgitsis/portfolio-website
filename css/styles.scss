@@ -1,0 +1,295 @@
+$primary-background-color: #3aafa9;
+$primary-dark-color: #17252a;
+$secondary-dark-color: #2b7a78;
+$tertiary-dark-color: #324e58;
+$primary-bright-color: #def2f1;
+$secondary-bright-color: #feffff;
+$link-color-visited: #552600;
+$link-color-hover: #aa6b39;
+$link-color-active: blueviolet;
+
+:root {
+   a {
+      &:visited {
+         color: $link-color-visited;
+      }
+
+      &:hover {
+         color: $link-color-hover;
+      }
+
+      &:active {
+         color: $link-color-active;
+      }
+   }
+}
+
+* {
+   box-sizing: border-box;
+
+   /* When setting element width, this makes sure it takes the padding and borders in consideration */
+}
+
+body {
+   background-color: $primary-background-color;
+   font-family: 'Comfortaa', sans-serif;
+   color: $primary-dark-color;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   margin: 0;
+
+   .page-header {
+      background-color: $primary-dark-color;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
+
+      .page-logo {
+         vertical-align: middle;
+
+         span {
+            font-family: 'Permanent Marker', sans-serif;
+            font-size: xx-large;
+         }
+      }
+
+      .navigation-list {
+         list-style-type: none;
+         vertical-align: middle;
+      }
+
+      .navigation-list li {
+         display: inline-block;
+         margin-left: 15px;
+      }
+
+      a {
+         color: $primary-bright-color;
+         text-decoration: none;
+
+         &:visited {
+            color: $primary-bright-color;
+         }
+
+         &:hover {
+            color: $secondary-bright-color;
+         }
+
+         &:active {
+            color: $secondary-bright-color;
+         }
+      }
+   }
+
+   .projects {
+      margin: 5vw;
+   }
+
+   .profile {
+      max-width: 50vw;
+      margin: 5vw auto;
+      text-align: justify;
+
+      span {
+         font-family: 'Permanent Marker', sans-serif;
+         font-size: x-large;
+      }
+   }
+
+   .page-footer {
+      clear: both;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: auto;
+
+      .footer-image {
+         min-width: 30px;
+      }
+   }
+}
+
+.contact-content {
+   margin: 5vw;
+
+   .cv-button {
+      text-decoration: none;
+      border: 1px solid $primary-dark-color;
+      border-radius: 4px;
+      background-color: #d4e2e7;
+      padding: 5px;
+      text-align: center;
+      margin-top: 100px;
+      color: $primary-dark-color;
+
+      &:visited {
+         color: $primary-bright-color;
+      }
+
+      &:hover {
+         color: $secondary-bright-color;
+      }
+
+      &:active {
+         color: $secondary-bright-color;
+      }
+   }
+}
+
+button,
+.button {
+   font-family: inherit;
+   background-color: var(--button-color);
+   margin-top: 5px;
+   padding: 5px;
+   border-radius: 5px;
+   border-width: 1px;
+   transition: background-color 0.2s;
+   display: inline-block;
+}
+
+button:hover,
+.button:hover {
+   font-family: inherit;
+   background-color: var(--button-color-hover);
+   cursor: pointer;
+   padding: 5px;
+   border-radius: 5px;
+   border-width: 1px;
+}
+
+button:active .button:active {
+   font-family: inherit;
+   background-color: #6d6a6a;
+   padding: 5px;
+   border-radius: 5px;
+   border-width: 1px;
+}
+
+.profile__portrait {
+   float: left;
+   margin-right: 40px;
+   border-radius: 50%;
+   width: 250px;
+   border: 5px solid $primary-dark-color;
+}
+
+.page-header__item {
+   flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+   flex-grow: 1;
+   text-align: right;
+}
+
+@supports (display: grid) {
+   .grid {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .grid__item {
+      display: flex;
+      flex-direction: column;
+      background-color: $primary-bright-color;
+      padding: 20px;
+      border-radius: 5px;
+      border: 1px solid $primary-dark-color;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+      .project-content {
+         display: flex;
+         flex-direction: column;
+
+         .project-img {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid $primary-dark-color;
+         }
+
+         .project-mobile-img {
+            border-radius: 5px;
+            border: 1px solid $primary-dark-color;
+            //vertical-align: middle;
+            margin-left: auto;
+            margin-right: auto;
+         }
+
+         .project-description {
+            text-align: justify;
+         }
+      }
+
+      .project-links {
+         margin-top: auto;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+
+         a {
+            text-decoration: none;
+            border: 1px solid $primary-dark-color;
+            border-radius: 4px;
+            background-color: $tertiary-dark-color;
+            width: 40%;
+            padding: 5px;
+            text-align: center;
+
+            &:visited {
+               color: $primary-bright-color;
+            }
+
+            &:hover {
+               color: $secondary-bright-color;
+            }
+
+            &:active {
+               color: $secondary-bright-color;
+            }
+         }
+      }
+   }
+
+   @media all and (max-width: 750px) {
+      .grid {
+         grid-gap: 10px;
+      }
+
+      h1 {
+         font-size: 22px;
+      }
+
+      .navigation-list li {
+         margin-left: 1vw;
+      }
+   }
+
+   @media all and (min-width: 500px) and (max-width: 750px) {
+      .grid {
+         grid-template-columns: 1fr 1fr;
+      }
+   }
+
+   @media all and (max-width: 500px) {
+      .grid {
+         grid-template-columns: 1fr;
+      }
+   }
+
+   @media all and (max-width: 550px) {
+      .navigation-list li {
+         display: block;
+      }
+   }
+
+   .contact-grid {
+      display: grid;
+      max-width: 40%;
+      grid-gap: 5%;
+      grid-template-columns: 1fr 5fr;
+   }
+}
