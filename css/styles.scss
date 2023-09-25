@@ -90,7 +90,7 @@ body {
    }
 
    .profile {
-      max-width: 50vw;
+      max-width: 80vw;
       margin: 5vw auto;
       text-align: justify;
 
@@ -256,7 +256,7 @@ button:active .button:active {
       }
    }
 
-   @media all and (max-width: 750px) {
+   @media all and (max-width: 1000px) {
       .grid {
          grid-gap: 10px;
       }
@@ -270,15 +270,27 @@ button:active .button:active {
       }
    }
 
-   @media all and (min-width: 500px) and (max-width: 750px) {
+   @media all and (min-width: 500px) and (max-width: 1000px) {
       .grid {
          grid-template-columns: 1fr 1fr;
+      }
+
+
+   }
+
+   @media all and (min-width: 500px) and (max-width: 750px) {
+      .profile__portrait {
+         max-width: 150px;
       }
    }
 
    @media all and (max-width: 500px) {
       .grid {
          grid-template-columns: 1fr;
+      }
+
+      .profile__portrait {
+         max-width: 150px;
       }
    }
 
