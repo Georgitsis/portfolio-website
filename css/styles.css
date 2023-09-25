@@ -145,6 +145,8 @@ button:active .button:active {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .grid__item {
+    display: flex;
+    flex-direction: column;
     background-color: #8aaabb;
     padding: 20px;
     border-radius: 5px;
@@ -157,6 +159,9 @@ button:active .button:active {
   }
   .grid__item .project-description {
     text-align: justify;
+  }
+  .grid__item .project-links {
+    margin-top: auto;
   }
   @media all and (max-width: 750px) {
     .grid {
