@@ -155,6 +155,9 @@ button:active .button:active {
     width: 100%;
     border-radius: 5px;
   }
+  .grid__item .project-description {
+    text-align: justify;
+  }
   @media all and (max-width: 750px) {
     .grid {
       grid-gap: 10px;
