@@ -65,6 +65,9 @@ body .page-header a:hover {
 body .page-header a:active {
   color: #feffff;
 }
+body .projects {
+  margin: 5vw;
+}
 body .profile {
   max-width: 50vw;
   /* Sets the max width of the profile */
