@@ -35,7 +35,7 @@ body .page-header {
 body .page-header .page-logo {
   vertical-align: middle;
 }
-body .page-header .page-logo span {
+body .page-header .page-logo .marker-text {
   font-family: "Permanent Marker", sans-serif;
   font-size: xx-large;
 }
@@ -84,7 +84,7 @@ body .profile .profile__portrait {
   width: 20vw;
   border: 2px solid #17252a;
 }
-body .profile span {
+body .profile .marker-text {
   font-family: "Permanent Marker", sans-serif;
   font-size: x-large;
 }
@@ -191,6 +191,9 @@ body .page-footer .footer-image {
     h1 {
       font-size: x-large;
     }
+    .marker-text {
+      font-size: large;
+    }
   }
   @media all and (min-width: 768px) and (max-width: 1024px) {
     .navigation-list li {
@@ -208,53 +211,4 @@ body .page-footer .footer-image {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
-}
-/*@supports (display: grid) {
-   .grid {
-      display: grid;
-      grid-gap: 20px;
-      grid-template-columns: 1fr 1fr 1fr;
-   }
-
-   @media all and (max-width: 1000px) {
-      .grid {
-         grid-gap: 10px;
-      }
-
-      h1 {
-         font-size: 22px;
-      }
-
-      .navigation-list li {
-         margin-left: 1vw;
-      }
-   }
-
-   @media all and (min-width: 500px) and (max-width: 1000px) {
-      .grid {
-         grid-template-columns: 1fr 1fr;
-      }
-   }
-
-   @media all and (min-width: 500px) and (max-width: 750px) {
-      .profile__portrait {
-         max-width: 150px;
-      }
-   }
-
-   @media all and (max-width: 500px) {
-      .grid {
-         grid-template-columns: 1fr;
-      }
-
-      .profile__portrait {
-         max-width: 150px;
-      }
-   }
-
-   @media all and (max-width: 550px) {
-      .navigation-list li {
-         display: block;
-      }
-   }
-}*//*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
