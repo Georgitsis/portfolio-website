@@ -106,36 +106,35 @@ body .page-footer .footer-image {
   color: #feffff;
 }
 
-button,
+/*button,
 .button {
-  font-family: inherit;
-  background-color: var(--button-color);
-  margin-top: 5px;
-  padding: 5px;
-  border-radius: 5px;
-  border-width: 1px;
-  transition: background-color 0.2s;
-  display: inline-block;
+   font-family: inherit;
+   background-color: var(--button-color);
+   margin-top: 5px;
+   padding: 5px;
+   border-radius: 5px;
+   border-width: 1px;
+   transition: background-color 0.2s;
+   display: inline-block;
 }
 
 button:hover,
 .button:hover {
-  font-family: inherit;
-  background-color: var(--button-color-hover);
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 5px;
-  border-width: 1px;
+   font-family: inherit;
+   background-color: var(--button-color-hover);
+   cursor: pointer;
+   padding: 5px;
+   border-radius: 5px;
+   border-width: 1px;
 }
 
 button:active .button:active {
-  font-family: inherit;
-  background-color: #6d6a6a;
-  padding: 5px;
-  border-radius: 5px;
-  border-width: 1px;
-}
-
+   font-family: inherit;
+   background-color: #6d6a6a;
+   padding: 5px;
+   border-radius: 5px;
+   border-width: 1px;
+}*/
 .profile__portrait {
   float: left;
   margin-right: 40px;
@@ -193,6 +192,7 @@ button:active .button:active {
     justify-content: space-evenly;
   }
   .grid__item .project-links a {
+    color: #def2f1;
     text-decoration: none;
     border: 1px solid #17252a;
     border-radius: 4px;
