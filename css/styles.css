@@ -44,7 +44,6 @@ body .page-header .navigation-list {
   vertical-align: middle;
 }
 body .page-header .navigation-list li {
-  display: inline-block;
   margin-left: 15px;
 }
 body .page-header .page-header__item {
@@ -75,6 +74,16 @@ body .profile {
   margin: 5vw auto;
   text-align: justify;
 }
+body .profile h1 {
+  text-align: left;
+}
+body .profile .profile__portrait {
+  float: left;
+  margin-right: 40px;
+  border-radius: 50%;
+  width: 20vw;
+  border: 2px solid #17252a;
+}
 body .profile span {
   font-family: "Permanent Marker", sans-serif;
   font-size: x-large;
@@ -88,14 +97,6 @@ body .page-footer {
 }
 body .page-footer .footer-image {
   min-width: 30px;
-}
-
-.profile__portrait {
-  float: left;
-  margin-right: 40px;
-  border-radius: 50%;
-  width: 250px;
-  border: 5px solid #17252a;
 }
 
 .grid__item {
@@ -183,41 +184,77 @@ body .page-footer .footer-image {
 @supports (display: grid) {
   .grid {
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    grid-template-columns: 1fr;
   }
-  @media all and (max-width: 1000px) {
-    .grid {
-      grid-gap: 10px;
-    }
+  @media all and (max-width: 767px) {
     h1 {
-      font-size: 22px;
-    }
-    .navigation-list li {
-      margin-left: 1vw;
+      font-size: x-large;
     }
   }
-  @media all and (min-width: 500px) and (max-width: 1000px) {
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    .navigation-list li {
+      display: inline-block;
+    }
     .grid {
       grid-template-columns: 1fr 1fr;
     }
   }
-  @media all and (min-width: 500px) and (max-width: 750px) {
-    .profile__portrait {
-      max-width: 150px;
-    }
-  }
-  @media all and (max-width: 500px) {
-    .grid {
-      grid-template-columns: 1fr;
-    }
-    .profile__portrait {
-      max-width: 150px;
-    }
-  }
-  @media all and (max-width: 550px) {
+  @media (min-width: 1024px) {
     .navigation-list li {
-      display: block;
+      display: inline-block;
+    }
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+/*@supports (display: grid) {
+   .grid {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   @media all and (max-width: 1000px) {
+      .grid {
+         grid-gap: 10px;
+      }
+
+      h1 {
+         font-size: 22px;
+      }
+
+      .navigation-list li {
+         margin-left: 1vw;
+      }
+   }
+
+   @media all and (min-width: 500px) and (max-width: 1000px) {
+      .grid {
+         grid-template-columns: 1fr 1fr;
+      }
+   }
+
+   @media all and (min-width: 500px) and (max-width: 750px) {
+      .profile__portrait {
+         max-width: 150px;
+      }
+   }
+
+   @media all and (max-width: 500px) {
+      .grid {
+         grid-template-columns: 1fr;
+      }
+
+      .profile__portrait {
+         max-width: 150px;
+      }
+   }
+
+   @media all and (max-width: 550px) {
+      .navigation-list li {
+         display: block;
+      }
+   }
+}*//*# sourceMappingURL=styles.css.map */
