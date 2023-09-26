@@ -140,7 +140,7 @@ body {
    }
 }
 
-button,
+/*button,
 .button {
    font-family: inherit;
    background-color: var(--button-color);
@@ -168,7 +168,7 @@ button:active .button:active {
    padding: 5px;
    border-radius: 5px;
    border-width: 1px;
-}
+}*/
 
 .profile__portrait {
    float: left;
@@ -216,7 +216,6 @@ button:active .button:active {
          .project-mobile-img {
             border-radius: 5px;
             border: 1px solid $primary-dark-color;
-            //vertical-align: middle;
             margin-left: auto;
             margin-right: auto;
          }
@@ -233,6 +232,7 @@ button:active .button:active {
          justify-content: space-evenly;
 
          a {
+            color: $primary-bright-color;
             text-decoration: none;
             border: 1px solid $primary-dark-color;
             border-radius: 4px;
