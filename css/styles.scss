@@ -198,13 +198,6 @@ body {
 .contact-content {
    margin: 5vw;
 
-   .contact-grid {
-      display: grid;
-      max-width: 40%;
-      grid-gap: 5%;
-      grid-template-columns: 1fr 5fr;
-   }
-
    .cv-button {
       text-decoration: none;
       border: 1px solid $primary-dark-color;
@@ -234,6 +227,31 @@ body {
       display: grid;
       grid-gap: 2vw;
       grid-template-columns: 1fr;
+   }
+
+   .contact-grid {
+      display: grid;
+      max-width: 40%;
+      grid-gap: 5%;
+      grid-template-columns: 1fr 5fr;
+   }
+
+   @media all and (max-width: 340px) {
+      .contact-grid {
+         div {
+            font-size: small;
+         }
+
+         a {
+            font-size: small;
+         }
+      }
+   }
+
+   @media all and (max-width: 430px) {
+      .contact-grid {
+         grid-template-columns: 1fr;
+      }
    }
 
    @media all and (max-width: 767px) {
