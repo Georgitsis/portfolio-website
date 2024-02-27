@@ -3,7 +3,6 @@
 }
 
 :root a {
-  font-size: large;
   color: #aa6b39;
 }
 :root a:visited {
@@ -19,14 +18,13 @@
 body {
   background-color: #f5f5f5;
   font-family: "Comfortaa", sans-serif;
-  color: #17252a;
+  color: #333333;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0;
 }
 body .page-header {
-  background-color: #17252a;
+  background-color: #348adb;
   display: flex;
   align-items: center;
   width: 100%;
@@ -39,11 +37,9 @@ body .page-header .page-logo .marker-text {
   font-family: "Permanent Marker", sans-serif;
   font-size: xx-large;
 }
-body .page-header .navigation-list {
+body .page-header .navigation-list li {
   list-style-type: none;
   vertical-align: middle;
-}
-body .page-header .navigation-list li {
   margin-left: 15px;
 }
 body .page-header .page-header__item {
@@ -66,23 +62,16 @@ body .page-header a:hover {
 body .page-header a:active {
   color: #feffff;
 }
-body .projects {
-  margin: 5vw;
-}
 body .profile {
-  max-width: 80vw;
-  margin: 5vw auto;
   text-align: justify;
 }
 body .profile h1 {
   text-align: left;
 }
 body .profile .profile__portrait {
-  float: left;
-  margin-right: 40px;
   border-radius: 50%;
   width: 20vw;
-  border: 2px solid #17252a;
+  border: 2px solid #348adb;
 }
 body .profile .marker-text {
   font-family: "Permanent Marker", sans-serif;
@@ -105,7 +94,7 @@ body .page-footer .footer-image {
   background-color: #def2f1;
   padding: 20px;
   border-radius: 5px;
-  border: 1px solid #17252a;
+  border: 1px solid #348adb;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .grid__item .project-content {
@@ -115,11 +104,11 @@ body .page-footer .footer-image {
 .grid__item .project-content .project-img {
   width: 100%;
   border-radius: 5px;
-  border: 1px solid #17252a;
+  border: 1px solid #348adb;
 }
 .grid__item .project-content .project-mobile-img {
   border-radius: 5px;
-  border: 1px solid #17252a;
+  border: 1px solid #348adb;
   margin-left: auto;
   margin-right: auto;
 }
@@ -135,7 +124,7 @@ body .page-footer .footer-image {
 .grid__item .project-links a {
   color: #def2f1;
   text-decoration: none;
-  border: 1px solid #17252a;
+  border: 1px solid #348adb;
   border-radius: 4px;
   background-color: #324e58;
   width: 40%;
@@ -152,18 +141,15 @@ body .page-footer .footer-image {
   color: #feffff;
 }
 
-.contact-content {
-  margin: 5vw;
-}
 .contact-content .cv-button {
   text-decoration: none;
-  border: 1px solid #17252a;
+  border: 1px solid #348adb;
   border-radius: 4px;
   background-color: #d4e2e7;
   padding: 5px;
   text-align: center;
   margin-top: 100px;
-  color: #17252a;
+  color: #348adb;
 }
 .contact-content .cv-button:visited {
   color: #def2f1;
@@ -200,27 +186,46 @@ body .page-footer .footer-image {
       grid-template-columns: 1fr;
     }
   }
-  @media all and (min-width: 571px) {
-    .navigation-list li {
-      display: inline-block;
-    }
-  }
   @media all and (max-width: 767px) {
     h1 {
+      font-size: x-large;
+    }
+    .navigation-list li {
       font-size: x-large;
     }
     .marker-text {
       font-size: large;
     }
+    .projects,
+    .profile,
+    .contact-content {
+      margin: 5vw;
+    }
   }
-  @media all and (min-width: 768px) and (max-width: 1024px) {
+  @media all and (min-width: 768px) and (max-width: 1023px) {
     .grid {
       grid-template-columns: 1fr 1fr;
+    }
+    .navigation-list li {
+      display: inline-block;
+    }
+    .projects,
+    .profile,
+    .contact-content {
+      margin: 15vw;
     }
   }
   @media (min-width: 1024px) {
     .grid {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+    .navigation-list li {
+      display: inline-block;
+    }
+    .projects,
+    .profile,
+    .contact-content {
+      margin: 0 20vw;
     }
   }
 }/*# sourceMappingURL=styles.css.map */
